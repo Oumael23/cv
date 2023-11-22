@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Oumaima EL ARBAOUI</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff; /* Fond blanc pour une apparence plus propre */
+            color: #444; /* Couleur de texte plus douce */
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            background-color: #f8f8f8;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre subtile pour la carte */
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 30px;
+            flex-shrink: 0;
+            overflow: hidden; /* Assure que l'image reste dans un cercle */
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Assure que l'image couvre tout l'espace */
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #dca9a9; /* Couleur de fond de la section */
+    margin-bottom: 15px;
+    border-radius: 12px; /* Coins plus arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+    border: 2px solid #b89090; /* Bordure pour effet sticker */
+    transition: all 0.3s ease; /* Transition douce pour les effets */
+}
+
+.section img {
+    width: 80%; /* Taille de l'image ajustée */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre pour l'image */
+    margin-bottom: 15px;
+}
+
+
+
+.section:hover {
+    transform: scale(1.03); /* Effet de zoom au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Ombre plus importante au survol */
+}
+
+.hidden {
+    display: none;
+    padding: 10px;
+    background-color: #eee8e8; /* Légère variation de couleur pour le contenu caché */
+    border-radius: 8px; /* Coins légèrement arrondis */
+    transition: all 0.3s ease;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-photo">
+            <img src="Ana.png" alt="Photo de profil">
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Oumaima EL ARBAOUI</h2>
+                <p>Étudiante en Master GPHY, en quête d'une opportunité de stage enrichissante.</p>
+            </div>
+
+            <div class="section" onclick="toggleSection('education-details')">
+                <h2>Diplômes et Formation</h2>
+                <img src="Formations.png" alt="Diplômes et Formation">
+                <div class="hidden" id="education-details">
+                    <p>Oumaima EL ARBAOUI, actuellement étudiante en Master Génie Physiologique Biotechnologique et Informatique (GPHY) depuis septembre 2023 à l'Université de Poitiers, France, poursuit une formation académique approfondie en sciences et technologies. Avant cela, elle a complété sa Licence 3 en Génie Bio-Informatique (GBI) à la même université, de septembre 2022 à mai 2023, enrichissant ses connaissances en biologie informatique. Sa formation antérieure comprend un DEUG en Sciences de la Vie et de la Terre (SVT) obtenu à l'Université d'Avignon entre septembre 2021 et mai 2022, et un DEUST en Biologie-Chimie-Géologie (BCG) de la Faculté des Sciences et Techniques (FST) à Fès, Maroc, achevé entre septembre 2019 et mai 2022.</p>
+                    
+                </div>
+            </div>
+
+            <!-- Autres sections ici... -->
+
+            <div class="section" onclick="toggleSection('Stages-details')">
+                <h2>Stages</h2>
+                <img src="Stages.png" alt="Stages">
+                <div class="hidden" id="Stages-details">
+                    <p>Mon parcours de stage a débuté chez AXA à Taza, Maroc, en juillet 2023, où j'ai été en charge du test et de la validation du logiciel RECA, un outil essentiel pour la gestion des réclamations clients. J'ai effectué des tests manuels et automatisés avec JUnit, participé aux recettes et tests utilisateurs, et rédigé un cahier de validation. Ensuite, au CNRS et à l'Université de Poitiers, de mai à juin 2023, j'ai contribué au développement de PLAViMop, un logiciel d'apprentissage profond, en programmant en R et Python, en effectuant des tests et en rédigeant un cahier de validation. Enfin, lors de mon stage chez RADEETA à Taza, de avril à juillet 2021, j'ai réalisé des analyses physico-chimiques et bactériologiques de l'eau, effectué des échantillonnages et travaillé sur la gestion des données, ce qui a aiguisé mes compétences en analyse de données et en collaboration d'équipe.</p>
+                    
+                </div>
+            </div>
+
+
+            <div class="section" onclick="toggleSection('Experiences-details')">
+                <h2>Expériences professionnelles</h2>
+                <img src="Experience.png" alt="Expériences professionnelles">
+                <div class="hidden" id="Experiences-details">
+                    <p>Mon expérience professionnelle s'étend sur divers rôles significatifs. En tant qu'Animatrice Périscolaire à l'Ecole Elémentaire Georges Brassens de Poitiers, Nouvelle-Aquitaine, France, de septembre 2022 à août 2023, j'ai joué un rôle crucial dans l'organisation d'activités périscolaires éducatives et créatives. J'ai collaboré étroitement avec les enseignants et les parents pour créer un environnement stimulant, planifié des activités, développé des stratégies de gestion de groupe, et utilisé mes compétences en communication pour interagir efficacement avec les enfants, les parents et le personnel éducatif. Puis, en tant qu'Agent de Service Civique au Lycée Professionnel Saint-Vincent de Paul à Avignon, de novembre 2021 à juin 2022, j'ai assisté les élèves dans l'utilisation des ordinateurs, géré la base de données BCDI et animé des ateliers de soutien scolaire, améliorant ainsi mes compétences en communication, gestion de projet et gestion électronique des documents. De plus, j'ai travaillé au Futuroscope, où j'ai acquis une expérience précieuse dans le domaine du divertissement et de la gestion de l'accueil des visiteurs, développant davantage mes compétences en service client et en gestion opérationnelle.</p>
+                    
+                </div>
+            </div>
+
+
+            <div class="section" onclick="toggleSection('Langues-details')">
+                <h2>Langues </h2>
+                <img src="langue.png" alt="Langue">
+                <div class="hidden" id="Langues-details">
+                    <p>Je suis bilingue en français et en arabe, je possède un niveau intermédiaire en anglais et des compétences de base en allemand et en espagnol. Cette polyvalence linguistique témoigne de ma capacité à communiquer dans un environnement international diversifié.</p>
+                   
+                </div>
+            </div>
+
+
+
+            <div class="section" onclick="toggleSection('Compétences-details')">
+                <h2> Compétences</h2>
+                <img src="Compétences.png" alt="Compétences">
+                <div class="hidden" id="Compétences-details">
+                    <p>Oumaima maîtrise plusieurs langages de programmation, dont Ada, Python, R et Java, et est familiarisée avec des outils bioinformatiques tels que Cytoscape et Galaxy. Elle possède également des compétences en édition de documents avec Office et LaTeX, et en systèmes d'exploitation, notamment Linux, Bash et Powershell. Sur le plan personnel, elle se distingue par sa capacité de projection, son autonomie et son esprit d'initiative.</p>
+                   
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.display = section.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
